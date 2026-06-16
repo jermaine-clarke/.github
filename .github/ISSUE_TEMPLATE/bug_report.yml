@@ -12,7 +12,10 @@ body:
     id: description
     attributes:
       label: Description
-      description: A clear and concise description of the bug.
+      description: > 
+        A clear and concise description of the bug. A description of the issue using key words 
+        relating to the issue. 50 to 80 characters recommended. Description should cover the 
+        problem, the action, and the location (if relevant).
   - type: textarea
     id: reproduction
     attributes:
@@ -32,7 +35,11 @@ body:
     id: uploads
     attributes:
       label: Uploads
-      description: Provide screenshots or recordings to explain your problem.
+      description: > 
+        Provide screenshots or recordings to explain your problem. If the bug is only 
+        encountered when using specific test data, provide a copy of that data. If the 
+        data needs to be redacted, please ensure the redacted data also causes the 
+        unexpected behavior using the same steps.
     validations:
       accept: ".png,.jpg,.jpeg,.gif,.svg,.webp,.mp4,.mov,.webm"
   - type: textarea
